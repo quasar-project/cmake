@@ -1,5 +1,5 @@
 # Correctly set C++ standard.
-# Bonus feature: fixes Visual Studio generator =)
+# Bonus feature: fixes Visual Studio generator =) and enables FPIC
 # Usage: set_language_standard(20)
 macro(set_language_standard __STANDARD)
   if(NOT CMAKE_CXX_STANDARD)
@@ -12,4 +12,6 @@ macro(set_language_standard __STANDARD)
   if("${CMAKE_GENERATOR}" MATCHES "^Visual Studio")
     set(CMAKE_GENERATOR_PLATFORM "x64" CACHE STRING "" FORCE)
   endif()
+
+  set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 endmacro()
