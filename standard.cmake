@@ -1,5 +1,5 @@
 # Correctly set C++ standard.
-# Bonus feature: fixes Visual Studio generator =) and enables FPIC
+# Bonus feature: fixes Visual Studio generator =) and enables FPIC + MOC + RCC
 # Usage: set_language_standard(20)
 macro(set_language_standard __STANDARD)
   if(NOT CMAKE_CXX_STANDARD)
@@ -14,4 +14,7 @@ macro(set_language_standard __STANDARD)
   endif()
 
   set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+  set(CMAKE_AUTOMOC ON)
+  set(CMAKE_AUTORCC ON)
+  set(CMAKE_AUTOUIC ON)
 endmacro()
