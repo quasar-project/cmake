@@ -1,0 +1,7 @@
+include(${CMAKE_CURRENT_LIST_DIR}/once.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/standard.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/threads.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/checks.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/static-crt.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/metadata.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/shared-export.cmake)
