@@ -3,7 +3,7 @@
 # Usage: target_add_metadata_definitions(<target>)
 macro(target_add_metadata_definitions __TARGET)
   target_compile_definitions(${__TARGET}
-    PUBLIC
+    PRIVATE
       -DPROJECT_NAME="${PROJECT_NAME}"
       -DPROJECT_VERSION="${PROJECT_VERSION}"
       -DPROJECT_COMPANY="Radar MMS"
