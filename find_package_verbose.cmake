@@ -1,0 +1,10 @@
+# just for more verbose output
+macro(find_package_verbose __PKG __VERSION)
+  message(STATUS "[${PROJECT_NAME}] searching for package ${__PKG} ${__VERSION}...")
+  find_package(${__PKG} ${__VERSION})
+  if(${__PKG}_FOUND)
+    message(STATUS "[${PROJECT_NAME}] searching for package ${__PKG} ${__VERSION}... OK!")
+  else()
+    message(FATAL_ERROR "[${PROJECT_NAME}] searching for package ${__PKG} ${__VERSION}... FAILURE")
+  endif()
+endmacro()
