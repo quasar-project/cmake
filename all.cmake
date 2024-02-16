@@ -1,4 +1,3 @@
-include(${CMAKE_CURRENT_LIST_DIR}/once.cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/standard.cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/threads.cmake)
 include(${CMAKE_CURRENT_LIST_DIR}/checks.cmake)
