@@ -15,6 +15,7 @@ test:
   script:
     - pwd
     - echo $CI_PROJECT_PATH
+    - echo $CI_PROJECT_DIR
 
 include:
   - project: 'test/essentials/ci'
