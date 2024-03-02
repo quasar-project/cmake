@@ -9,7 +9,7 @@ stages:
   - poppy-upload
 
 
-.pre:
+test:
   tags: ['alse']
   stage: poppy-generate
   script:
