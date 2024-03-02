@@ -11,7 +11,8 @@ stages:
 include:
   - project: 'test/essentials/ci'
     ref: main
-    file: 
+    file:
+      - echo $CI_PROJECT_PATH 
       - 'poppy/any-src-artifacts.yml'
       - 'poppy/upload-artifactory.yml'
     
