@@ -8,7 +8,6 @@ stages:
   - poppy-generate
   - poppy-upload
 
-
 include:
   - project: 'test/essentials/ci'
     ref: main
