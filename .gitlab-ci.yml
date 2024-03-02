@@ -13,6 +13,7 @@ test:
   tags: ['alse']
   stage: poppy-generate
   script:
+    - pwd
     - echo $CI_PROJECT_PATH
 
 include:
