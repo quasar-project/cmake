@@ -8,11 +8,17 @@ stages:
   - poppy-generate
   - poppy-upload
 
+
+.pre:
+  tags: ['alse']
+  stage: poppy-generate
+  script:
+    - echo $CI_PROJECT_PATH
+
 include:
   - project: 'test/essentials/ci'
     ref: main
-    file:
-      - echo $CI_PROJECT_PATH 
+    file: 
       - 'poppy/any-src-artifacts.yml'
       - 'poppy/upload-artifactory.yml'
     
