@@ -12,23 +12,4 @@ include:
 stages: 
   - build
   - poppy
-
-# stages:
-#   - poppy-generate
-#   - poppy-upload
-
-# test:
-#   tags: ['alse']
-#   stage: poppy-generate
-#   script:
-#     - pwd
-#     - echo $CI_PROJECT_PATH
-#     - echo $CI_PROJECT_DIR
-
-# include:
-#   - project: 'test/essentials/ci'
-#     ref: main
-#     file: 
-#       - 'poppy/any-src-artifacts.yml'
-#       - 'poppy/upload-artifactory.yml'
     
