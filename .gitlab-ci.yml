@@ -17,7 +17,6 @@ stages:
 #   - poppy-generate
 #   - poppy-upload
 
-
 # test:
 #   tags: ['alse']
 #   stage: poppy-generate
