@@ -12,6 +12,7 @@ include:
 
 stages: 
   - poppy
+  - build
 
 # stages:
 #   - poppy-generate
