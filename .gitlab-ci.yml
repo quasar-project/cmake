@@ -10,6 +10,7 @@ include:
     file: 'poppy/poppy.yml'
 
 stages: 
+  - build
   - poppy
 
 
