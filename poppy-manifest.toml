@@ -1,5 +1,9 @@
 [package]
 name = "cmake"
-version = { major = 0, minor = 1, patch = 1 }
 authors = ["whs31 <whs31@github.io>"]
 description = "CMake helper scripts"
+
+[package.version]
+major = 0
+minor = 1
+patch = 2
