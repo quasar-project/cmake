@@ -16,4 +16,11 @@ function(target_add_integration_tests TARGET)
       GTest::GTest
       GTest::Main
   )
+  install(TARGETS ${TARGET}-test
+    EXPORT ${TARGET}-test
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+  )
 endfunction()
