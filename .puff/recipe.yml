@@ -1,0 +1,8 @@
+---
+shared:
+  toolchain:
+    shell:
+      - mkdir -p target/export
+      - cp -r .puff target/export
+      - cp -r cmake target/export
+      - cp -r Puff.toml target/export
